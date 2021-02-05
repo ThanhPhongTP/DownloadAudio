@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <LinearLayout
+        android:id="@+id/status_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_audio"
+            android:layout_width="@dimen/dimen_42"
+            android:layout_height="@dimen/dimen_42"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rectangle120"/>
+
+        <TextView
+            android:id="@+id/tvNameAudio"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Music Complete"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:scrollbars="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/dimen_15"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/img_shuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_shuffle_24" />
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="@dimen/dimen_22"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:src="@drawable/ic_baseline_play_arrow_24"/>
+        <ImageView
+            android:id="@+id/img_skip_next"
+            android:layout_width="@dimen/dimen_22"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:src="@drawable/ic_baseline_skip_next_24"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_views"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42"
+        android:background="@drawable/background_bottom_navigation"
+        android:foreground="?attr/selectableItemBackground"
+        app:itemBackground="@drawable/background_bottom_navigation"
+        app:itemIconSize="22dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/bottom_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>

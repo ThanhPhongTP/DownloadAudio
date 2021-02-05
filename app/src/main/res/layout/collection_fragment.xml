@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".CollectionFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="@dimen/dimen_15"
+      android:layout_marginTop="@dimen/dimen_25"
+      android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Collection"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imgAddCollection"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_baseline_add_circle_outline_24"
+        android:gravity="end"/>
+
+  </LinearLayout>
+
+  <androidx.appcompat.widget.SearchView
+      android:id="@+id/search"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      app:queryBackground="@null"
+      android:layout_marginTop="13dp"
+      android:background="@drawable/shapebgsearch"
+      app:searchIcon="@drawable/loupe"
+      app:queryHint="Search"
+      android:layout_marginHorizontal="@dimen/dimen_15"
+      android:theme="@style/SearchViewTheme"
+      app:iconifiedByDefault="false">
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/black"/>-->
+  </androidx.appcompat.widget.SearchView>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycleCollection"
+      android:layout_marginTop="@dimen/dimen_25"
+      android:layout_width="wrap_content"
+      android:clipToPadding="false"
+      android:layout_marginLeft="@dimen/dimen_15"
+      android:layout_height="wrap_content"
+      />
+
+</LinearLayout>

@@ -15,7 +15,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="@dimen/dimen_16"
             android:text="Select collection"/>
 
         <ImageView
@@ -42,7 +42,7 @@
             android:id="@+id/btnCancel_move"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/dimen_16"
             android:textColor="@color/black"
             android:layout_marginHorizontal="@dimen/dimen_25"
             android:text="cancel"/>
@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/btnDone"
-            android:textSize="16sp"
+            android:textSize="@dimen/dimen_16"
             android:text="Done" />
     </LinearLayout>
 

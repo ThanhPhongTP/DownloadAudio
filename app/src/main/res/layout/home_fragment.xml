@@ -17,7 +17,7 @@
         android:textStyle="bold"
         android:layout_marginTop="@dimen/dimen_40"
         android:textColor="@color/black"
-        android:textSize="16sp"/>
+        android:textSize="@dimen/dimen_16"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,15 +29,15 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="@dimen/dimen_25"
             android:src="@drawable/headphone"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            android:layout_marginBottom="40dp"
+            android:textSize="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_40"
             android:textStyle="bold"
             android:text="Enjoy listening to youtube audio"/>
 
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textSize="16sp"
+            android:textSize="@dimen/dimen_16"
             android:drawableRight="@drawable/ic_baseline_content_paste_24"
             android:backgroundTint="@color/line_edit"
             android:theme="@style/SearchViewTheme"
@@ -60,8 +60,8 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_40"
             android:text="Download"
-            android:paddingHorizontal="40dp"
-            android:layout_marginTop="20dp"
+            android:paddingHorizontal="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_20"
             android:textColor="@color/white"
             android:background="@drawable/bg_btn"/>
     </LinearLayout>

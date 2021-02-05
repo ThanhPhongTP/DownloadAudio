@@ -40,7 +40,7 @@
             android:maxLines="1"
             android:layout_gravity="center"
             android:ellipsize="end"
-            android:textSize="16sp"
+            android:textSize="@dimen/dimen_16"
             android:textColor="@color/black" />
 
         <ImageView
@@ -56,6 +56,5 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:background="@drawable/line"/>
-
 
 </LinearLayout>

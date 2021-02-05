@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         img_shuffle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int pos = random.nextInt(allSongLength - 1);
+                int pos = random.nextInt(albumArrayList.size());
                 onDataPass(albumArrayList.get(pos).getsNameAlbum(), albumArrayList.get(pos).getImgAlbum());
 
             }

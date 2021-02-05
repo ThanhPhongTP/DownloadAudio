@@ -72,7 +72,7 @@
         android:background="@drawable/background_bottom_navigation"
         android:foreground="?attr/selectableItemBackground"
         app:itemBackground="@drawable/background_bottom_navigation"
-        app:itemIconSize="22dp"
+        app:itemIconSize="@dimen/dimen_22"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/bottom_menu">

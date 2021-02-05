@@ -21,13 +21,13 @@
         android:layout_height="wrap_content"
         android:text="Collection"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="@dimen/dimen_16"
         android:textStyle="bold"/>
 
     <ImageView
         android:id="@+id/imgAddCollection"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
+        android:layout_width="@dimen/dimen_22"
+        android:layout_height="@dimen/dimen_22"
         android:src="@drawable/ic_baseline_add_circle_outline_24"
         android:gravity="end"/>
 
@@ -36,9 +36,9 @@
   <androidx.appcompat.widget.SearchView
       android:id="@+id/search"
       android:layout_width="match_parent"
-      android:layout_height="40dp"
+      android:layout_height="@dimen/dimen_40"
       app:queryBackground="@null"
-      android:layout_marginTop="13dp"
+      android:layout_marginTop="@dimen/dimen_13"
       android:background="@drawable/shapebgsearch"
       app:searchIcon="@drawable/loupe"
       app:queryHint="Search"

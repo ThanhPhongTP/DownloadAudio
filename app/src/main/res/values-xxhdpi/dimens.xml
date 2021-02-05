@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen
+        name="design_bottom_navigation_text_size"
+        tools:override="true">27px </dimen>
+    <dimen
+        name="design_bottom_navigation_active_text_size"
+        tools:override="true">27px </dimen>
+
+    <dimen name="design_bottom_navigation_height"
+        tools:override="true">144px</dimen>
+
+    <dimen name="dimen_5">15px</dimen>
+    <dimen name="dimen_10">30px</dimen>
+    <dimen name="dimen_12">36px</dimen>
+    <dimen name="dimen_16">48px</dimen>
+    <dimen name="dimen_13">39px</dimen>
+    <dimen name="dimen_15">45px</dimen>
+    <dimen name="dimen_17">51px</dimen>
+    <dimen name="dimen_20">60px</dimen>
+    <dimen name="dimen_22">66px</dimen>
+    <dimen name="dimen_25">75px</dimen>
+    <dimen name="dimen_30">90px</dimen>
+    <dimen name="dimen_35">105px</dimen>
+    <dimen name="dimen_40">120px</dimen>
+    <dimen name="dimen_50">150px</dimen>
+
+    <dimen name="dimen_42">126px</dimen>
+
+    <dimen name="dimen_100">300px</dimen>
+</resources>
